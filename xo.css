@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+    margin: 0;
+    padding: 2px;
+    background-attachment: fixed;
+    background-color: rgb(32, 53, 53);
+}
+h1{
+    color: #f7dc44;
+    font-family: 'Indie Flower';
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+#b1{
+    background:transparent;
+    position: absolute;
+    height: 125px;
+    width: 115px;
+    border:1px solid  rgb(32, 53, 53);
+    left:36%;
+    top: 22%;
+    cursor:pointer;
+
+}
+#b2{
+    background:transparent;
+    position: absolute;
+    height: 125px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:45.4%;
+    cursor:pointer;
+    top: 22%;
+}
+#b3{
+    background:transparent;
+    position: absolute;
+    height: 125px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:54.8%;
+    top: 22%;
+    cursor:pointer;
+
+}
+#b4{
+    background:transparent;
+    position: absolute;
+    height: 120px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:36%;
+    top: 42.5%;
+    cursor:pointer;
+
+}
+#b5{
+    background:transparent;
+    position: absolute;
+    height: 120px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:45.4%;
+    top: 42.5%;
+    cursor:pointer;
+
+}
+#b6{
+    background:transparent;
+    position: absolute;
+    height: 120px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:54.8%;
+    top: 42.5%;
+    cursor:pointer;
+
+}
+#b7{
+    background:transparent;
+    position: absolute;
+    height: 125px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:36%;
+    top: 62%;
+    cursor:pointer;
+
+}
+#b8{
+    background:transparent;
+    position: absolute;
+    height: 125px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:45.4%;
+    top: 62%;
+    cursor:pointer;
+
+}
+#b9{
+    background:transparent;
+    position: absolute;
+    height: 125px;
+    width: 115px;
+    border:1px solid rgb(32, 53, 53);
+    left:54.8%;
+    top: 62%;
+    cursor:pointer;
+
+}
+#reset{
+    position: absolute;
+    height: 50px;
+    width: 110px;
+    top:85%;
+    left:46%;
+    font-weight: 500;
+    font-size: larger;
+    border: 3px solid #252525;
+    background-color: #c71a1a;
+    color: snow;
+    border-radius: 5px;
+    font-family: 'Indie Flower';
+    cursor:pointer;
+}
+#reset:hover{
+    background-color: darkred;
+    color: aliceblue;
+    font-weight: 500;
+
+}
+#b1:hover ,#b2:hover ,#b3:hover ,#b4:hover ,#b5:hover ,#b6:hover ,#b7:hover ,#b8:hover ,#b9:hover{
+    background-color: #c71a1a;
+}
