@@ -17,14 +17,15 @@ BOARD = {
 X_POS = set()
 O_POS = set()
 GAMEOVER = False
+flag = 0
 ##Checking
 #0 incomplete
 #1 x wins
 #2 o wins
 #3 tie
 def check_game():
-    l=BOARD.values()
-    flag=0
+    global flag
+    l = list(BOARD.values())
     if l[1]==l[4] and l[4]==l[7]:
         x=l[1]
         if x=="X":
@@ -49,8 +50,16 @@ def check_game():
         if x=="O":
         #O won
             flag=2
-    elif l[6]==l[7] and l[7]==l[8] or l[2]==l[4] and l[4]==l[6] or l[2]==l[5] and l[5]==l[8] :
+    elif l[6]==l[7] and l[7]==l[8] or l[2]==l[4] and l[4]==l[6]  :
         x=l[6]
+        if x=="X":
+        #X won
+            flag=1
+        if x=="O":
+            #O WON THE GAME
+            flag=2
+    elif l[2]==l[5] and l[5]==l[8] :
+        x=l[2]
         if x=="X":
         #X won
             flag=1
@@ -76,8 +85,9 @@ X_SET = False
 
 def board_state():
     global GAMEOVER
+    global flag
     global BOARD
-    return json.dumps({"type": "state", "gameover": GAMEOVER, "board": BOARD})
+    return json.dumps({"type": "state", "gameover": GAMEOVER, "board": BOARD, "winner": flag})
 
 def player_count():
     global PLAYERS
@@ -128,6 +138,7 @@ async def unregister_player(websocket):
     await notify_players()
 
 async def counter(websocket, path):
+    global GAMEOVER
     await register_player(websocket)
     try:
         # send board state here
@@ -146,6 +157,8 @@ async def counter(websocket, path):
                 elif check_game() == 3:
                     print("TIE")
                 print(BOARD)
+
+                await notify_board_state()
             elif data["action"] == "restart":
                 pass
             else:

@@ -12,8 +12,10 @@ h1{
     text-align: center;
     text-decoration: underline;
 }
+
+
 #b1{
-    background:transparent;
+    background:white;
     position: absolute;
     height: 125px;
     width: 115px;
@@ -21,53 +23,69 @@ h1{
     left:36%;
     top: 22%;
     cursor:pointer;
-
+    color:black;
+    font-size: 50px;
+    font-family: 'Indie Flower';
 }
 #b2{
-    background:transparent;
+    background:white;
     position: absolute;
     height: 125px;
     width: 115px;
     border:1px solid rgb(32, 53, 53);
     left:45.4%;
     cursor:pointer;
+    color:black;
+    font-size: 50px;
     top: 22%;
+    font-family: 'Indie Flower';
 }
 #b3{
-    background:transparent;
+    background:white;
     position: absolute;
     height: 125px;
     width: 115px;
     border:1px solid rgb(32, 53, 53);
     left:54.8%;
+    color:black;
+    font-size: 50px;
     top: 22%;
     cursor:pointer;
+    font-family: 'Indie Flower';
 
 }
 #b4{
-    background:transparent;
+    background:white;
     position: absolute;
+    color:black;
+    font-size: 50px;
     height: 120px;
     width: 115px;
     border:1px solid rgb(32, 53, 53);
     left:36%;
     top: 42.5%;
     cursor:pointer;
+    font-family: 'Indie Flower';
 
 }
 #b5{
-    background:transparent;
+    background:white;
     position: absolute;
     height: 120px;
+    color:black;
+    font-size: 50px;
     width: 115px;
     border:1px solid rgb(32, 53, 53);
     left:45.4%;
     top: 42.5%;
     cursor:pointer;
+    font-family: 'Indie Flower';
 
 }
 #b6{
-    background:transparent;
+    background:white;
+    color:black;
+    font-size: 50px;
     position: absolute;
     height: 120px;
     width: 115px;
@@ -75,21 +93,26 @@ h1{
     left:54.8%;
     top: 42.5%;
     cursor:pointer;
+    font-family: 'Indie Flower';
 
 }
 #b7{
-    background:transparent;
+    background:white;
     position: absolute;
     height: 125px;
     width: 115px;
+    color:black;
+    font-size: 50px;
     border:1px solid rgb(32, 53, 53);
     left:36%;
     top: 62%;
     cursor:pointer;
-
+    font-family: 'Indie Flower';
 }
 #b8{
-    background:transparent;
+    background:white;
+    color:black;
+    font-size: 50px;
     position: absolute;
     height: 125px;
     width: 115px;
@@ -97,18 +120,20 @@ h1{
     left:45.4%;
     top: 62%;
     cursor:pointer;
-
+    font-family: 'Indie Flower';
 }
 #b9{
-    background:transparent;
+    background:white;
     position: absolute;
     height: 125px;
     width: 115px;
     border:1px solid rgb(32, 53, 53);
     left:54.8%;
+    color:black;
+    font-size: 50px;
     top: 62%;
     cursor:pointer;
-
+    font-family: 'Indie Flower';
 }
 #reset{
     position: absolute;
